@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indo-German workshop on Plant Microbe Interactions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .schedule-item {
+            border-left: 3px solid #3b82f6;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .schedule-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            border: 2px solid white;
+        }
+        .session-chair {
+            background-color: #e0e7ff;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #4338ca;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-blue-600">IGWPMI</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#speakers" class="text-gray-600 hover:text-blue-600 transition duration-300">Speakers</a>
+                <a href="#schedule" class="text-gray-600 hover:text-blue-600 transition duration-300">Schedule</a>
+                <a href="#venue" class="text-gray-600 hover:text-blue-600 transition duration-300">Venue</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">About</a>
+            <a href="#speakers" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Speakers</a>
+            <a href="#schedule" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Schedule</a>
+            <a href="#venue" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Venue</a>
+            <a href="#contact" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Image -->
+        <section class="pt-32 pb-20 md:pt-40 md:pb-24 bg-cover bg-top bg-no-repeat" style="background-image: url('images/background.png');">
+            <div class="container mx-auto px-6 text-center">
+                <!-- Sponsor logo at the top -->
+                <img src="images/sponcer.png" alt="Sponsor Logo" class="mx-auto mb-12 h-auto w-full max-w-2xl p-4">
+                
+                <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">Indo-German workshop on Plant Microbe Interactions</h1>
+                <p class="text-xl md:text-2xl text-white font-semibold">“Implications for plant health and their interconnections”</p>
+                <div class="mt-8">
+                    <p class="text-lg text-white"><i class="fas fa-calendar-alt mr-2"></i>October 27-28th, 2025</p>
+                    <p class="text-lg text-white"><i class="fas fa-map-marker-alt mr-2"></i>BITS-Pilani, Pilani, India</p>
+                </div>
+                <div class="mt-10">
+                    <a href="#register" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg">Register Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10 section-title">About the Workshop</h2>
+                <div class="max-w-4xl mx-auto text-gray-700 text-lg space-y-4 text-justify">
+                    <p>The Indo-German Workshop on Plant–Microbe Interactions: Implications for Plant Health and Their Interconnections will be held on October 27–28, 2025, at BITS Pilani, Pilani Campus, Rajasthan, India. This two-day event will bring together leading scientists, early-career researchers, and students from India and Germany to share the latest advances in plant–microbe interactions, plant immunity, plant–herbivore interactions, and sustainable agriculture. The program includes plenary and invited talks, thematic sessions, poster presentations, and student talks, offering a rich platform for scientific exchange and collaboration. With focused discussions on topics such as microbial infection strategies, chemical signalling, host immune responses, and symbiosis, this workshop aims to foster knowledge-sharing, highlight cutting-edge research, and strengthen Indo-German research networks in plant sciences. </p>
+                    <h3 class="text-2xl font-bold text-center pt-8 pb-4">Theme Areas</h3>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-leaf mr-2 text-green-500"></i>Host-pathogen Interactions</div>
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-seedling mr-2 text-green-500"></i>Plant-Beneficial microbial Interactions</div>
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-sun mr-2 text-yellow-500"></i>Plant - Environment Interactions</div>
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-atom mr-2 text-blue-500"></i>Molecular Cell Biology</div>
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-flask mr-2 text-purple-500"></i>Interdisciplinary Research in Biological Sciences</div>
+                        <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-shield-alt mr-2 text-red-500"></i>Plant Immunity and Signaling</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Resource Persons</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Alga Zuccaro</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Plant-Microbe Interactions</p>
+                        <p class="text-gray-600">CEPLAS, University of Cologne</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Alexander Förderer</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Structural Engineering of Plant-Microbe Interactions</p>
+                        <p class="text-gray-600">Max Planck Institute for Molecular Plant Physiology</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Armin Djamei</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Microbial Infection Strategies</p>
+                        <p class="text-gray-600">INRES, Universität Bonn</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Natalia Requena</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Symbiosis & Beneficial Interactions</p>
+                        <p class="text-gray-600">Karlsruhe Institute of Technology</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Reinhard Fischer</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Fungal Secondary Metabolites & Virulence</p>
+                        <p class="text-gray-600">Karlsruhe Institute of Technology</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Mariana Schuster</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Proteases in Plant-Microbe Interactions</p>
+                        <p class="text-gray-600">Leibniz Institute of Plant Biochemistry</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Prabodh Kumar Trivedi</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Small Molecules in Plant-Microbe Interactions</p>
+                        <p class="text-gray-600">CSIR-CIMAP, Lucknow</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Ashok Giri</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Plant Molecular Defenses Against Insects</p>
+                        <p class="text-gray-600">CSIR - NCL, Pune</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Anupama Ghosh</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Microbial Infection Strategies</p>
+                        <p class="text-gray-600">Bose Institute, Kolkata</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Sirsha Mitra</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Plant Stress Acclimation</p>
+                        <p class="text-gray-600">Savitribai Phule Pune University</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Amey Redkar</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Root Signalling & Systemic Infections</p>
+                        <p class="text-gray-600">NCBS, Bangalore</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Praveen Verma</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Necrotrophic Phytopathogens</p>
+                        <p class="text-gray-600">Jawaharlal Nehru University</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Jyothilakshmi Vadassery</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Plant Immunity & Insect Interactions</p>
+                        <p class="text-gray-600">NIPGR, New Delhi</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Maitrayee Dasgupta</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Symbiosis & Beneficial Interactions</p>
+                        <p class="text-gray-600">University of Calcutta</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Senjuti Sinharoy</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Nodule Vascular Strands Regulation</p>
+                        <p class="text-gray-600">NIPGR, New Delhi</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Sagar Pandit</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Plant Chemical Ecology</p>
+                        <p class="text-gray-600">IISER, Pune</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Prof. Shilpi Sharma</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Disease Suppressive Soil Microbiome</p>
+                        <p class="text-gray-600">IIT Delhi</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Balakumaran Chandrasekar</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Glycobiology of Soybean-Macrophomina Interactions</p>
+                        <p class="text-gray-600">BITS Pilani</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Santosh Satbhai</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Iron-deficiency Signaling & Root Growth</p>
+                        <p class="text-gray-600">IISER Mohali</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-1">Dr. Matheshwaran Saravanan</h3>
+                        <p class="text-blue-600 font-semibold mb-2">Chromatin Remodeling & Fungal Virulence</p>
+                        <p class="text-gray-600">IIT Kanpur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="schedule" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Workshop Schedule</h2>
+                <div class="grid md:grid-cols-2 gap-x-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-blue-600">Day 1: Monday, October 27th, 2025</h3>
+                        <div class="schedule-item">
+                            <p class="font-bold">8:00 - 9:00 am</p>
+                            <p>Registration</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold">9:00 - 9:30 am</p>
+                            <p>Inauguration</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Balakumaran Chandrasekar (BITS Pilani, Rajasthan)</div>
+                            <p class="font-bold mt-2">9:30 - 10:15 am</p>
+                            <p class="font-semibold">Plenary Talk: Alga Zuccaro, University of Cologne</p>
+                            <p class="italic text-gray-600">"Reprogramming Root-Microbiota compatibility through microbial synergism"</p>
+                        </div>
+                        <div class="schedule-item bg-blue-50 p-4 rounded-lg">
+                            <p class="font-bold">10:15 - 10:45 am</p>
+                            <p>Tea/ Coffee break and Photo Session</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold">10:45 - 11:15 am</p>
+                            <p>Info Session on the DWIH and Max Planck Office India Initiatives</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Anupama Ghosh (Bose Institute, Kolkata) - Symbiosis and Beneficial Interactions</div>
+                            <p class="font-bold mt-2">11:15 - 11:40 am</p><p>Natalia Requena, KIT, Karlsruhe - "The secret life of root colonizing fungi"</p>
+                            <p class="font-bold mt-2">11:40 am - 12:05 pm</p><p>Maitrayee Dasgupta, University of Calcutta - "Adaptive Trajectories of SYMRK in the Evolution of Rhizobia Legume Symbiosis"</p>
+                            <p class="font-bold mt-2">12:05 - 12:30 pm</p><p>Senjuti Sinharoy, NIPGR, New Delhi - "The dynamic interaction of bHLH proteins in nodule vascular strands regulation"</p>
+                            <p class="font-bold mt-2">12:30 - 12:45 pm</p><p>Student Talk 1 - TBD</p>
+                            <p class="font-bold mt-2">12:45 - 1:00 pm</p><p>Student Talk 2 - TBD</p>
+                        </div>
+                        <div class="schedule-item bg-blue-50 p-4 rounded-lg">
+                            <p class="font-bold">1:00 - 2:00 pm</p><p>Lunch, BITS Pilani Cafeteria</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold">2:00 - 4:00 pm</p><p>Posters and Refreshments</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Santosh Satbhai (IISER, Mohali) - Infection strategies of Pathogens</div>
+                            <p class="font-bold mt-2">4:00 - 4:25 am</p><p>Anupama Ghosh, Bose Institute, Kolkata - "Insights into the biological function of extracellular lipases in Ustilago maydis"</p>
+                            <p class="font-bold mt-2">4:25 - 4:50 am</p><p>Armin Djamei, INRES, University of Bonn - "How to induce a gall - lessons from the smut fungus Ustilago maydis"</p>
+                        </div>
+                        <div class="schedule-item bg-blue-50 p-4 rounded-lg">
+                            <p class="font-bold">4:50 - 5:10 pm</p><p>Tea/ Coffee break</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold mt-2">5:10 - 5:35 am</p><p>Amey Redkar, NCBS, Bangalore - "Insights into the interconnected root signalling landscape and its role in shaping systemic infections"</p>
+                            <p class="font-bold mt-2">5:35 - 6:00 am</p><p>Praveen Verma, JNU, New Delhi - "Lifestyle of necrotrophic phytopathogens: Mechanism of survival under hostile host cell environment"</p>
+                            <p class="font-bold mt-2">6:00 - 6:15 pm</p><p>Student Talk 3 - TBD</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold">6:45 - 8:00 pm</p><p>Cultural Program</p>
+                        </div>
+                        <div class="schedule-item bg-blue-50 p-4 rounded-lg">
+                            <p class="font-bold">8:00 pm onwards</p><p>Gala Dinner</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-green-600">Day 2: Tuesday, October 28th, 2025</h3>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Senjuti Sinharoy (NIPGR, New Delhi) - Plant-Herbivore Interactions</div>
+                            <p class="font-bold mt-2">9:00 - 9:25 am</p><p>Sirisha Mitra, Savitribai Phule Pune University, Pune - "Solving the retrograde riddle of multi-stress acclimation in Solanum lycopersicum L."</p>
+                            <p class="font-bold mt-2">9:25 - 9:50 am</p><p>Jyothilakshmi Vadassery NIPGR, New Delhi - "NBS-LRR receptor–mediated recognition of a Spodoptera litura effector triggers plant immunity"</p>
+                            <p class="font-bold mt-2">9:50 - 10:15 am</p><p>Sagar Pandit, IISER, Pune - "Plant Chemical Ecology: Decoding the Lingua Franca of Plant Interactions"</p>
+                            <p class="font-bold mt-2">10:15 - 10:30 am</p><p>Student Talk 4 - TBD</p>
+                        </div>
+                        <div class="schedule-item bg-green-50 p-4 rounded-lg">
+                            <p class="font-bold">10:30 - 11:00 am</p><p>Tea/ Coffee break</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Amey Redkar (NCBS, Bangalore) - Chemical Signalling and Agri-biologicals</div>
+                            <p class="font-bold mt-2">11:00 - 11:25 am</p><p>Prabodh Trivedi, CSIR-CIMAP, Lucknow - "Small but Mighty: Unveiling the role of small molecules in plant-microbe interactions"</p>
+                            <p class="font-bold mt-2">11:25 - 11:50 am</p><p>Ashok Giri, CSIR-NCL, Pune - "Plant Proteinase Inhibitor based Peptides: Challenges and perspectives of their applications in plant protection"</p>
+                            <p class="font-bold mt-2">11:50 am - 12:15 pm</p><p>Reinhard Fischer, KIT, Karlsruhe - "Alternaria alternata secondary metabolites - plant virulence factors and beyond"</p>
+                            <p class="font-bold mt-2">12:15 - 12:40 pm</p><p>Shilpi Sharma, IIT, Delhi - "Deciphering the role of microbiome alchemists in disease suppressive soil"</p>
+                            <p class="font-bold mt-2">12:40 - 1:10 pm</p><p>Industrial sponsor Talks</p>
+                        </div>
+                        <div class="schedule-item bg-green-50 p-4 rounded-lg">
+                            <p class="font-bold">1:10 - 2:00 pm</p><p>Lunch, BITS Pilani Cafeteria</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Armin Djamei (INRES, University of Bonn) - Cell wall and Protease-Mediated Host Immune Responses</div>
+                            <p class="font-bold mt-2">2:00 - 2:25 pm</p><p>Mariana Schuster, IPB, Halle - "Proteases in plant microbe interactions: immune proteins and virulence factors"</p>
+                            <p class="font-bold mt-2">2:25 - 2:50 pm</p><p>Balakumaran Chandrasekar, BITS Pilani, Rajasthan - "Glycobiology of Soybean- Macrophomina Interactions at the cell wall Interface"</p>
+                            <p class="font-bold mt-2">2:50 - 3:15 pm</p><p>Santosh Satbhai, IISER, Mohali - "Danger-associated peptide modulates Iron-deficiency signaling and root growth in Arabidopsis"</p>
+                            <p class="font-bold mt-2">3:15 - 3:30 pm</p><p>Student Talk 5 - TBD</p>
+                            <p class="font-bold mt-2">3:30 - 3:45 pm</p><p>Student Talk 6 - TBD</p>
+                        </div>
+                        <div class="schedule-item bg-green-50 p-4 rounded-lg">
+                            <p class="font-bold">3:45 - 4:15 pm</p><p>Tea/ Coffee break</p>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="session-chair">Chair: Jyothilakshmi Vadassery (NIPGR, New Delhi) - From Chromatin to Structural Biology of Receptors</div>
+                            <p class="font-bold mt-2">4:15 - 4:40 pm</p><p>Matheshwaran Saravanan, IIT Kanpur - "Role of SWR1 Chromatin Remodeler in morphogenesis and Virulence of Ustilago maydis"</p>
+                            <p class="font-bold mt-2">4:40 - 5:05 pm</p><p>Alexander Förderer, MPI for Molecular Plant Physiology, Potsdam - "Structure-informed engineering of plant-microbe interactions"</p>
+                            <p class="font-bold mt-2">5:05 - 5:20 pm</p><p>Student Talk 7 - TBD</p>
+                        </div>
+                        <div class="schedule-item">
+                            <p class="font-bold">5:45 - 6:30 pm</p><p>Poster Awards and Vote of Thanks</p>
+                        </div>
+                        <div class="schedule-item bg-green-50 p-4 rounded-lg">
+                            <p class="font-bold">7:30 pm onwards</p><p>Dinner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="venue" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Venue & Travel</h2>
+                <div class="max-w-4xl mx-auto text-gray-700 text-lg">
+                    <a href="https://www.google.com/maps/place/BITS+Pilani/@28.363933,75.58801,15z/data=!4m6!3m5!1s0x39131964f43e4575:0x1415055b9f35c8a!8m2!3d28.363933!4d75.58801!16zL20vMDNfeTZn?entry=ttu" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition duration-300 block p-8 bg-white rounded-lg shadow-md text-center mb-12">
+                        <p class="text-2xl font-semibold mb-2">Birla Institute of Technology and Science, Pilani</p>
+                        <p>Pilani Campus, Rajasthan, INDIA - 333031</p>
+                        <p class="mt-4 text-blue-500 font-semibold">Click here to view on Google Maps <i class="fas fa-external-link-alt text-sm ml-1"></i></p>
+                    </a>
+                    <div class="text-justify space-y-4 bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-center mb-4">How to Reach Pilani</h3>
+                        <p><strong class="text-blue-600"><i class="fas fa-plane mr-2"></i>By Air:</strong> The nearest airports are in Delhi (approx. 220 km) and Jaipur (approx. 235 km). Both airports are well-connected to major cities. From there, you can hire a taxi or take a bus to reach Pilani.</p>
+                        <p><strong class="text-blue-600"><i class="fas fa-train mr-2"></i>By Train:</strong> The nearest major railway stations are Loharu (approx. 26 km) and Chirawa (approx. 16 km). Loharu is well-connected to Delhi. From these stations, you can easily find taxis and local buses to BITS Pilani.</p>
+                        <p><strong class="text-blue-600"><i class="fas fa-bus mr-2"></i>By Road:</strong> Pilani is well-connected by road. Regular bus services are available from major cities like Delhi (from ISBT Kashmiri Gate) and Jaipur (from Sindhi Camp Bus Stand). Taxis are also readily available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="organizers" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Organizers</h2>
+                <div class="flex flex-wrap justify-center gap-12 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                        <h3 class="text-xl font-bold mb-1">Dr. Balakumaran C.</h3>
+                        <p class="text-gray-600">BITS, Pilani</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                        <h3 class="text-xl font-bold mb-1">Dr. Amey Redkar</h3>
+                        <p class="text-gray-600">NCBS, Bangalore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="register" class="py-20 hero-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-center mb-10 section-title">Register Now</h2>
+                <p class="max-w-2xl mx-auto text-gray-700 text-lg mb-8">Click the button below to go to the registration page. We look forward to your participation!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf02wgaASUgI2Rf14gjI-vj23M0Qynr4APEEkjkuyiTMBbS9Q/viewform?usp=sharing&ouid=113342080322633135362" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg">Click here to register</a>
+            </div>
+        </section>
+
+
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-center mb-10 section-title">Contact Us</h2>
+                <p class="text-lg text-gray-700 mb-6">For any inquiries, please reach out to the organizers:</p>
+                <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-4 md:space-y-0">
+                    <p class="text-lg"><i class="fas fa-envelope mr-2 text-blue-600"></i><strong>Dr. Balakumaran C:</strong> <a href="mailto:balakumaran.c@pilani.bits-pilani.ac.in" class="hover:underline">balakumaran.c@pilani.bits-pilani.ac.in</a></p>
+                    <p class="text-lg"><i class="fas fa-envelope mr-2 text-blue-600"></i><strong>Dr. Amey Redkar:</strong> <a href="mailto:aredkar@ncbs.res.in" class="hover:underline">aredkar@ncbs.res.in</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-gray-400 text-sm">
+               
+                <p class="mt-2 font-bold">WEBPAGE CREDIT</p>
+                <p>BUDDU SHISHIR</p>
+                <p>M.E Biotechnology, BITS-Pilani</p>
+                <p>MUTHUSARAVANAN S</p>
+	        <p>PhD candidate, 2022-</p>
+                <p>Department of Biological Sciences, BITS-Pilani, Pilani</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Get the mobile menu button and the mobile menu container
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle the mobile menu visibility on button click
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link inside it is clicked
+        const mobileLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Add smooth scrolling to all internal anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
